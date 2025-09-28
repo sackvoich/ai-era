@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+/* Секция результата */
+.result-section {
+    padding: 30px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.result-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.result {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.result-placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.result-content {
+    text-align: center;
+}
+
+.result-status {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-clean { color: #28a745; }
+.status-profanity { color: #dc3545; }
+
+.result-probability {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+/* Секция ввода */
+.input-section {
+    padding: 30px;
+}
+
+.input-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Переключатель режимов */
+.mode-switcher {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #e9ecef;
+    padding: 5px;
+}
+
+.mode-switcher button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c757d;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.mode-switcher button.active {
+    background: white;
+    color: #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.check-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4);
+}
+
+.check-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.4);
+}
+
+.check-btn:active {
+    transform: translateY(0);
+}
+
+/* Панель загрузки файла */
+.file-upload-area {
+    border: 2px dashed #e9ecef;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: #fafafa;
+}
+
+.file-upload-area.drag-over {
+    border-color: #3498db;
+    background-color: #f0f8ff;
+}
+
+.file-btn {
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    background: white;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.file-btn:hover {
+    background: #3498db;
+    color: white;
+}
+
+.drag-hint {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.file-status {
+    min-height: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.file-success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Информация о модели */
+.model-info {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#textInputPanel, #fileInputPanel {
+    animation: fadeIn 0.5s ease-in-out;
+}

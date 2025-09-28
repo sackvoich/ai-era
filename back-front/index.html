@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка текста на маты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Блок результата -->
+        <div class="result-section">
+            <h2>РЕЗУЛЬТАТ ПРОВЕРКИ</h2>
+            <div id="result" class="result">
+                <div class="result-placeholder">Введите текст или загрузите файл для проверки</div>
+            </div>
+        </div>
+
+        <!-- Блок ввода -->
+        <div class="input-section">
+            <h2>ПАНЕЛЬ ВВОДА</h2>
+
+            <!-- Переключатель режимов -->
+            <div class="mode-switcher">
+                <button id="textModeBtn" class="active">Ввод текста</button>
+                <button id="fileModeBtn">Загрузка файла</button>
+            </div>
+
+            <!-- Панель для ввода текста -->
+            <div id="textInputPanel">
+                <textarea 
+                    id="textInput" 
+                    placeholder="Введите ваш текст здесь..."
+                    rows="8"
+                ></textarea>
+                <div class="actions">
+                    <button id="checkBtn" class="check-btn">Проверить</button>
+                </div>
+            </div>
+
+            <!-- Панель для загрузки файла -->
+            <div id="fileInputPanel" style="display: none;">
+                <div class="file-upload-area">
+                    <input type="file" id="fileInput" accept=".txt" hidden>
+                    <button id="fileSelectBtn" class="file-btn">📁 Выбрать .txt файл</button>
+                    <div class="drag-hint">или перетащите файл сюда</div>
+                    <div id="fileStatus" class="file-status"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Название модели -->
+        <div class="model-info">Создано с любовью командой приматов - Белорусско-Российский университет</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

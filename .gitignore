@@ -1,0 +1,24 @@
+back-front/__pycache__
+back-front/models
+back-front/models_2
+back-front/models_3
+back-front/models_5
+back-front/models_6
+logs
+results
+venv2
+temp_eval_results
+*.lgp
+*.~lgp
+*.pkl
+main2.py
+main21.ipynb
+main.ipynb
+main-update-old.ipynb
+main-update-god.ipynb
+train.csv
+train.ipynb
+creative_profanity_dataset_1000.csv
+creative_profanity_dataset_1000 (2).csv
+creative_profanity_dataset_1000 (3).csv
+labeled.csv
