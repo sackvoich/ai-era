@@ -9,7 +9,7 @@ from sklearn.metrics import f1_score, classification_report, accuracy_score, con
 # --- 1. НАСТРОЙКИ (ИЗМЕНИТЕ ЭТИ ЗНАЧЕНИЯ) ---
 
 # Укажите путь к папке с вашей сохраненной моделью
-MODEL_PATH = "./back-front/models_6" # Пример: "./models/baseline_bert" или другая папка
+MODEL_PATH = "./back-front/models_4" # Пример: "./models/baseline_bert" или другая папка
 
 # Укажите путь к вашему размеченному тестовому файлу
 TEST_CSV_PATH = "profanity_dataset_500.csv" # Файл на 500 строк

@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_ID = "./models_5"
+MODEL_ID = "./models_4"
 THRESHOLD = float(os.getenv("THRESHOLD", "0.5"))
 if not (0.0 <= THRESHOLD <= 1.0):
     raise RuntimeError("THRESHOLD must be in [0,1]")
