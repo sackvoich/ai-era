@@ -4,6 +4,7 @@ back-front/models_2
 back-front/models_3
 back-front/models_5
 back-front/models_6
+back-front/models_7
 logs
 results
 venv2
@@ -21,4 +22,5 @@ train.ipynb
 creative_profanity_dataset_1000.csv
 creative_profanity_dataset_1000 (2).csv
 creative_profanity_dataset_1000 (3).csv
+simple_profanity_dataset_500.csv
 labeled.csv
